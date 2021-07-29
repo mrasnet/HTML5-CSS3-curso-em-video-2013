@@ -1,0 +1,2 @@
+miro video converter -> para converter para os tipos: ogg (audio)
+itunes -> para converter para os tipos: x-aac

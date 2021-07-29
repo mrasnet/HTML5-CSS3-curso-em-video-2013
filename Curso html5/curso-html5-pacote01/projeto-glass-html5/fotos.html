@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Google Glass | Fotos</title>
+    <!-- <style> todo css dentro de um arquivo html fica dentro da tag style </style> --> 
+    <link rel="stylesheet" type="text/css" href="_css/estilo.css"/> <!--pode omitir o type-->
+    <link rel="stylesheet" href="_css/fotos.css"/>
+</head>
+<script language="javascript" src="_javascript/funcoes.js"></script> <!-- o language é opcional, por padrão o navegador já interpreta como javascript-->
+<body>
+<div id="interface">
+
+    <header id="cabecalho"> <!-- cabeçalho -->
+    <hgroup> <!-- agrupamento de títulos -->
+    <h1>Google Glass</h1>
+    <h2>revolução do Google está chegando</h2>
+    </hgroup>
+
+    <img id="icone" src="_imagens/fotos.png">
+
+<nav id="menu"> <!-- conteiner nav cria uma area de navegação dentro do site -->
+    <h1>Menu Principal</h1> 
+<!-- há três tipos para listas ordenadas, numerico é padrão, outros são a ou A (alfabeto), i ou I (alg. romano)
+ex: ol type="1" start="1" , tipo numerico e começa pela contagem 1-->
+<!-- start especifica de onde inicia os itens da lista, só aceita valor numerico -->
+     <ul>   <!-- ul é lista não ordenada, com demarcadores. tipos: disc (padrão), square, circle -->
+        <li onmouseover="mudaFoto('_imagens/home.png')" onmouseout="mudaFoto('_imagens/fotos.png')"><a href="index.html">Home</a></li> <!-- é possível ter listas dentro de listas, ol com ul, vise-versa, ul com ul, etc. -->
+        <li onmouseover="mudaFoto('_imagens/especificacoes.png')" onmouseout="mudaFoto('_imagens/fotos.png')"><a href="specs.html">Especificações</a></li> <!-- Pode fazer chamada de evento num objeto e modificar outro -->
+        <li onmouseover="mudaFoto('_imagens/fotos.png')" onmouseout="mudaFoto('_imagens/fotos.png')"><a href="fotos.html">Fotos</a></li>
+        <li onmouseover="mudaFoto('_imagens/multimidia.png')" onmouseout="mudaFoto('_imagens/fotos.png')"><a href="multimidia.html">Multimídia</a></li>
+        <li onmouseover="mudaFoto('_imagens/contato.png')" onmouseout="mudaFoto('_imagens/fotos.png')"><a href="fale-conosco.html">Fale conosco</a></li>
+    </ul>
+</nav>
+    </header>
+
+    <section id="corpo-full">
+        <article id="noticia-principal">
+            <header id="cabecalho-artigo">    
+                <hgroup> 
+                    <h3>Glass > Fotos</h3> 
+                    <h1>Galeria de Imagens do Google Glass</h1>
+                    <h2>por Matheus Souza</h2>
+                    <h3 class="direita">Atualizado em 21/Agosto/2020</h3>
+                 </hgroup>  
+                </header>
+
+
+<p>Veja na nossa galeria de fotos várias belas imagens que mostram algumas das principais características do Google Glass, como recursos e propriedades que estão impressionando o mundo inteiro. Basta passar o mouse sobre uma das fotos para ver uma versão ampliada e com uma breve descrição.
+</p>
+
+<ul id="album-fotos">
+    <li id="foto01"><span>Agenda e lembretes</span></li>
+    <li id="foto02"><span>Sergey Brin usando o Glass</span></li>
+    <li id="foto03"><span>Leve e compacto</span></li>
+    <li id="foto04"><span>Sensação de uma tela de 50"</span></li> 
+    <li id="foto05"><span>Vários tipos de lente</span></li> 
+    <li id="foto06"><span>Informações importantes</span></li>
+</ul>
+
+        </article>
+    </section>
+<footer id="rodape">
+<p>Copyright &copy; 2013 - by Gustavo Guanabara <br/> &nbsp; 
+<a href="https://www.facebook.com/" target="_blank"> Facebook </a> | 
+<a href="https://twitter.com/" target="_blank"> Twitter</a></p>
+</footer>
+</div>
+</body>
+</html>

@@ -1,0 +1,44 @@
+@charset "UTF-8";
+
+form{
+    width: 500px;
+    margin: auto; /* margin com valor auto deixará centralizado */
+}
+input, textarea{/* Reparar que utilizar virgula na hora de referenciar um objeto, permite definir as mesmas propriedades para esse outro objeto*/
+    font-family: sans-serif;
+    font-weight: normal; /* Para não ficar em negrito*/
+    font-size: 13pt;
+    background-color: rgba(255,255,255,.8);
+}
+input:hover, textarea:hover{ 
+    background-color: #dddddd;
+}
+legend{
+    color: #888888;
+    font-weight: bold;
+    font-size: 13pt;
+    font-family: sans-serif;
+}
+fieldset{
+    border-color: #cecece;
+    margin: 20px;
+}
+fieldset#sexo{
+    width: 150px;
+}
+input#botao{
+    outline: none;
+}
+
+fieldset#usuario{
+    background: url("../_imagens/icone-contato.png") no-repeat 95% 95%; /*95% na lateral, e vertical*/
+}
+fieldset#endereco{
+    background: url("../_imagens/icone-endereco.png") no-repeat 95% 95%; /*95% na lateral, e vertical*/
+}
+fieldset#mensagem{
+    background: url("../_imagens/icone-mensagem.png") no-repeat 95% 95%; /*95% na lateral, e vertical*/
+}
+fieldset#pedido{
+    background: url("../_imagens/icone-pagamento.png") no-repeat 95% 95%; /*95% na lateral, e vertical*/
+}

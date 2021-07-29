@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Google Glass | Especificações</title>
+    <!-- <style> todo css dentro de um arquivo html fica dentro da tag style </style> --> 
+    <link rel="stylesheet" type="text/css" href="_css/estilo.css"/> <!--pode omitir o type-->
+    <link rel="stylesheet" href="_css/specs.css"/>
+    <script language="javascript" src="_javascript/funcoes.js"></script> <!-- o language é opcional, por padrão o navegador já interpreta como javascript-->
+</head>
+<body>
+<div id="interface">
+
+    <header id="cabecalho"> <!-- cabeçalho -->
+    <hgroup> <!-- agrupamento de títulos -->
+    <h1>Google Glass</h1>
+    <h2>revolução do Google está chegando</h2>
+    </hgroup>
+
+    <img id="icone" src="_imagens/especificacoes.png">
+
+<nav id="menu"> <!-- conteiner nav cria uma area de navegação dentro do site -->
+    <h1>Menu Principal</h1> 
+<!-- há três tipos para listas ordenadas, numerico é padrão, outros são a ou A (alfabeto), i ou I (alg. romano)
+ex: ol type="1" start="1" , tipo numerico e começa pela contagem 1-->
+<!-- start especifica de onde inicia os itens da lista, só aceita valor numerico -->
+     <ul>   <!-- ul é lista não ordenada, com demarcadores. tipos: disc (padrão), square, circle -->
+        <li onmouseover="mudaFoto('_imagens/home.png')" onmouseout="mudaFoto('_imagens/especificacoes.png')"><a href="index.html">Home</a></li> <!-- é possível ter listas dentro de listas, ol com ul, vise-versa, ul com ul, etc. -->
+        <li onmouseover="mudaFoto('_imagens/especificacoes.png')" onmouseout="mudaFoto('_imagens/especificacoes.png')"><a href="specs.html">Especificações</a></li> <!-- Pode fazer chamada de evento num objeto e modificar outro -->
+        <li onmouseover="mudaFoto('_imagens/fotos.png')" onmouseout="mudaFoto('_imagens/especificacoes.png')"><a href="fotos.html">Fotos</a></li>
+        <li onmouseover="mudaFoto('_imagens/multimidia.png')" onmouseout="mudaFoto('_imagens/especificacoes.png')"><a href="multimidia.html">Multimídia</a></li>
+        <li onmouseover="mudaFoto('_imagens/contato.png')" onmouseout="mudaFoto('_imagens/especificacoes.png')"><a href="fale-conosco.html">Fale conosco</a></li>
+    </ul>
+</nav>
+    </header>
+
+<section id="corpo-full">
+    <article id="noticia-principal">
+        <header id="cabecalho-artigo">    
+            <hgroup> 
+                <h3>Glass > Especificações</h3> 
+                <h1>Raio-X no Google Glass</h1>
+                <h2>por Matheus Souza</h2>
+                <h3 class="direita">Atualizado em 20/Agosto/2020</h3>
+             </hgroup>  
+            </header>
+<p>Clique em qualquer área destacada da imagem para ter mais informações sobre os recursos do Google Glass. Qualquer ponto vermelho vai te levar a um lugar cheio de novas informações.
+</p>
+    <section id="conteudo">
+        <img src="_imagens/glass-esquema-marcado.jpg" usemap="#meumapa"/>
+        <map name="meumapa">
+            <!-- para retangular: 2 cord(ponto superior esquerd. e enferior direito), 4 valores / cirular: centro x,y, raio -->
+            <area shape="rect" coords="184,209,265,256" href="google-glass.html#tela" target="janela"/>
+            <area shape="circle" coords="158,243,12" href="google-glass.html#camara" target="janela"/>
+            <area shape="circle" coords="73,52,12" href="google-glass.html#sensores" target="janela"/>
+            <area shape="poly" coords="28,143,83,216,84,249,27,169" href="google-glass.html#gadgets" target="janela"/>
+        <!-- shape poly pode requesitar mais dimensões dependendo de cada caso, caso haja dúvidas, rever aula 28-->
+        </map>
+        <iframe src="google-glass.html" name="janela" id="frame-spec"></iframe>
+    </section>
+        </article>
+</section>
+
+<footer id="rodape">
+<p>Copyright &copy; 2013 - by Gustavo Guanabara <br/> &nbsp; 
+<a href="https://www.facebook.com/" target="_blank"> Facebook </a> | 
+<a href="https://twitter.com/" target="_blank"> Twitter</a></p>
+</footer>
+</div>
+</body>
+</html>
